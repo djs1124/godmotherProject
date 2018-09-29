@@ -24,7 +24,7 @@
 		<td>库存</td>
 		<td>状态</td>
 		<td>操作</td>
-		
+		<td>操作</td>
 	</tr>
 <c:forEach items="${foodList }" var="food">
 	<tr>
