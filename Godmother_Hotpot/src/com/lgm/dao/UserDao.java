@@ -2,9 +2,8 @@ package com.lgm.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.lgm.model.Admin;
+import com.lgm.model.Salary;
 import com.lgm.model.User;
 
 public interface UserDao {
@@ -17,6 +16,6 @@ public interface UserDao {
 	
 	public List<User> getUsers();
 	
-	
+	public List<Salary>  getSalary();
 	
 }

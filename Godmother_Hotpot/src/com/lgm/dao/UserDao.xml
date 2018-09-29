@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lgm.dao.UserDao">
+	
+	
 	<select id="loginAdmin" parameterType="Admin" resultType="Admin">
 	SELECT a_name aName,a_password aPassword FROM hg_admin
 	WHERE a_name = #{aName} AND a_password = #{aPassword}
@@ -12,13 +14,30 @@
 	</select>
 
 	<insert id="addUser" parameterType="User"> 
-	INSERT INTO hg_user(u_name,u_password,u_static,u_position,u_salary) 
-	VALUES(#{uName},#{uPassword},#{uStatic},#{uPosition},#{uSalary})
+	INSERT INTO hg_user(u_username,u_password,u_static,u_name,u_sex,u_position) 
+	VALUES(#{uUsername},#{uPassword},#{uStatic},#{uName},#{uSex},#{uPosition})
 	</insert>
 	
 	<select id="getUsers" resultType="User">
-	SELECT u_id uId,u_name uName,u_password uPassword,u_static uStatic,u_position uPosition,u_salary uSalary
+	SELECT u_id uId,u_name uUsername,u_password uPassword,u_static uStatic,u_name uName,u_sex uSex,u_position uPosition
 	FROM hg_user
 	</select>
 	
+	<select id="getSalary" resultMap="ResultMapSalary">
+	SELECT u.u_username,u.u_name,u.u_sex,u.u_position,s.s_salary
+	FROM hg_user u,hg_salary s
+	WHERE u.u_position = s.u_position
+	</select>
+	
+	<resultMap type="Salary" id="ResultMapSalary">
+		<result property="sId" column="s_id"/>
+		<result property="sSalary" column="s_salary"/>
+		<association property="user" javaType="User">
+			<result property="uUsername" column="u_username"/>
+			<result property="uName" column="u_name"/>
+			<result property="uSex" column="u_sex"/>
+			<result property="uPosition" column="u_position"/>
+		</association>
+	
+	</resultMap>
 </mapper>

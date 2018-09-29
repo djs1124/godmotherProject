@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lgm.model.Admin;
+import com.lgm.model.Salary;
 import com.lgm.model.User;
 import com.lgm.service.UserService;
 
@@ -63,6 +64,16 @@ public class UserController {
 		
 		mv.addObject("userList", list);
 		mv.setViewName("success");
+		return mv;
+	}
+	
+	@RequestMapping("/getSalary.do")
+	public ModelAndView getSalary(){
+		ModelAndView mv = new ModelAndView();
+		List<Salary> list = userService.getSalary();
+		
+		mv.addObject("salaryList", list);
+		mv.setViewName("salaryList");
 		return mv;
 	}
 }

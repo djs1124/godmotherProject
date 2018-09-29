@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.lgm.dao.UserDao;
 import com.lgm.model.Admin;
+import com.lgm.model.Salary;
 import com.lgm.model.User;
 import com.lgm.service.UserService;
 
@@ -52,6 +53,12 @@ public class UserServiceImpl implements UserService{
 	public List<User> getUsers() {
 	
 		return userDao.getUsers();
+	}
+
+
+	@Override
+	public List<Salary> getSalary() {
+		return userDao.getSalary();
 	}
 
 

@@ -1,9 +1,9 @@
 package com.lgm.model;
 
 public class Admin {
-	private int aId;
-	private String aName;
-	private String aPassword;
+	private int aId; //管理员id
+	private String aName; //管理员账号
+	private String aPassword; //管理员密码
 	public int getaId() {
 		return aId;
 	}

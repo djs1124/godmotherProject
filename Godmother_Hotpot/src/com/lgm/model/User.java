@@ -1,12 +1,13 @@
 package com.lgm.model;
 
 public class User {
-	private int uId;
-	private String uName;
-	private String uPassword;
-	private int uStatic;
-	private String uPosition;
-	private int uSalary;
+	private int uId; //员工id
+	private String uUsername; //员工账号
+	private String uPassword; //员工密码
+	private int uStatic; //员工状态
+	private String uName; //员工姓名
+	private int uSex; //员工性别
+	private String uPosition; //员工职位
 	public int getuId() {
 		return uId;
 	}
@@ -31,18 +32,25 @@ public class User {
 	public void setuStatic(int uStatic) {
 		this.uStatic = uStatic;
 	}
+	public String getuUsername() {
+		return uUsername;
+	}
+	public void setuUsername(String uUsername) {
+		this.uUsername = uUsername;
+	}
+	public int getuSex() {
+		return uSex;
+	}
+	public void setuSex(int uSex) {
+		this.uSex = uSex;
+	}
 	public String getuPosition() {
 		return uPosition;
 	}
 	public void setuPosition(String uPosition) {
 		this.uPosition = uPosition;
 	}
-	public int getuSalary() {
-		return uSalary;
-	}
-	public void setuSalary(int uSalary) {
-		this.uSalary = uSalary;
-	}
+	
 	
 	
 }
