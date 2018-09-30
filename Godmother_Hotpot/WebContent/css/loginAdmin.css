@@ -1,0 +1,13 @@
+@charset "UTF-8";
+*{padding:0px;margin:0px;}
+body{background:url(../images/login_bg2.jpg) no-repeat 35% 40%;font-family:Arial, Helvetica, sans-serif;font-size:12px }
+img{border:0;}
+.lg_top{ height:100px;width:468px;padding:10px;}
+.lg{width:468px;height:428px;margin:100px auto;background:-moz-linear-gradient(to right,#820000,#32434A);opacity:0.8;border-radius:10px; text-align:center}
+.lg_ti{font-size:30px;margin-top:30px;color:white}
+.ur{height:37px;line-height:37px;border:0;color:#00CCFF;width:236px;margin-top:55px;background:url(../images/user.png) no-repeat;padding-left:10px;font-size:20px;font-family:Arial, Helvetica, sans-serif;}
+.pw{height:37px;line-height:37px;border:0;color:#00CCFF;width:236px;margin-top:15px;background:url(../images/password.png) no-repeat;padding-left:10px;font-size:20px;font-family:Arial, Helvetica, sans-serif;}
+.lg_main{width:400px;height:190px;margin:0 25px;}
+.lg_admin{width:448px;height:40px}
+.bt{width:120px;height:25px;color:#33a3dc;opacity:0.5;font-size:17px;margin-left:5px;float:left;background:none;border:none}
+.bn{width:130px;height:35px;border-radius:10px;margin-left:180px;background:-moz-linear-gradient(to right,#820000,#32434A) ;border:0.01;display:block;font-size:18px;color:white;font-family:Arial, Helvetica, sans-serif;font-weight:bolder;cursor:pointer;}
