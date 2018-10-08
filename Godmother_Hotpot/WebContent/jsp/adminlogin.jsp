@@ -29,7 +29,7 @@
 			<input class="bn" type="submit" value="登陆"></div>
 		</form>
 		<div class="foot_ex">
-		<a href="userlogin.html"><button class="bt" type="button" value=""><img alt="text" src="../images/bt.png">员工登陆</button></a></div>
+		<a href="userlogin.jsp"><button class="bt" type="button" value=""><img alt="text" src="../images/bt.png">员工登陆</button></a></div>
 	</div>
 
 </body>

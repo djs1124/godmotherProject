@@ -26,7 +26,7 @@
 			<input class="bn" type="submit" value="登陆"></div>
 		</form>
 		<div class="foot_ex">
-		<a href="adminlogin.html"><button class="bt" type="button" value=""><img alt="text" src="../images/bt.png">管理员登陆</button></a></div>
+		<a href="adminlogin.jsp"><button class="bt" type="button" value=""><img alt="text" src="../images/bt.png">管理员登陆</button></a></div>
 	</div>
 	
 
